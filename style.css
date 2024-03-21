@@ -1,54 +1,104 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: poppins;
+  font-family: cursive;
   box-sizing: border-box;
 }
 
-:root {
-  --bg-color: #ffff;
-  --second-bg-color: #52c326;
-  --main-color: #85ff55;
-  --text-color: #0000;
-  --second-color: #162947;
-  --other-color: #171a1a;
-  --true-color: rgb(255, 85, 85);
+body {
+  background: url("./foto/junggle\ \(1\).jpg");
+  background-size: cover;
 }
 
-body {
-  background: #72e244;
+#questionImage {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
 }
-.app {
-  background: #fff;
-  width: 90%;
+
+span {
+  color: green;
+}
+
+.quiz-animal {
+  background: #ffffff87;
+  width: 70vh;
+  height: 70vh;
   max-width: 600px;
   margin: 100px auto 0;
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  box-shadow: 0 0 0 10px #ffffff;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 0 15px black;
 }
+
+.quiz-animal h1 {
+  margin-top: -30px;
+  font-size: 61px;
+  color: green;
+}
+
+.quiz-animal img {
+  height: 50vh;
+  width: 50vh;
+}
+.quiz-animal button {
+  font-weight: 700;
+  padding: 9px;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 30vh;
+  border: none;
+  color: #fff;
+  background-color: green;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-animal button:hover {
+  background-color: #d3d3d3;
+  color: #000000;
+}
+
+.app {
+  background: #ffffff87;
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 0 10px #ffffff;
+  display: none;
+  box-shadow: 0 0 15px black, 0 0 15px black;
+}
+
 .app h1 {
   text-align: center;
   font-size: 40px;
-  color: var(--second-bg-color);
-  font-weight: 600;
-  border-bottom: 1px solid var(--second-bg-color);
+  color: #37004d;
+  font-weight: 800;
+  border-bottom: 2px solid #000000;
   padding-bottom: 30px;
 }
+
 .quiz {
   padding: 20px 0;
 }
+
 .quiz h2 {
-  font-size: 15px;
+  font-size: 19px;
   color: #001e4d;
   font-weight: 600;
 }
+
 .btn {
-  background: var(--bg-color);
-  color: var(--second-color);
-  font-weight: 500;
+  background: #fff;
+  color: #222;
+  font-weight: 1000;
   width: 100%;
-  border: 1px solid var(--second-bg-color);
+  border: 1px solid #222;
   padding: 10px;
   margin: 10px 0;
   text-align: left;
@@ -56,31 +106,40 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
+
 .btn:hover:not([disabled]) {
-  background: rgb(195, 195, 195);
-  color: var(--bg-color);
+  background: #d3d3d3;
+  color: green;
 }
 .btn:disabled {
   cursor: no-drop;
 }
 
 #next-btn {
-  background: var(--second-bg-color);
-  color: var(--bg-color);
+  background: #001e4d;
+  color: #fff;
   font-weight: 500;
   width: 150px;
   border: 0;
   padding: 10px;
-  margin: 20px auto 0;
+  margin: 5px auto 0;
   border-radius: 4px;
   cursor: pointer;
   display: none;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
 }
 
 .correct {
-  background: var(--main-color);
+  background: #80f9a0;
 }
-.incorrect {
-  background: var(--true-color);
+
+.Incorrect {
+  background: #ff7070;
+}
+#questionImage {
+  width: auto;
+  height: 150px;
+}
+.animalimg {
+  display: flex;
+  justify-content: center;
 }
