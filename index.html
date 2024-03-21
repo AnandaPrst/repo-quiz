@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App - Easy Tutorials</title>
-    <link rel="Stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="app">
-      <h1>Animal Quiz</h1>
-      <div class="Quiz">
-        <h2 id="quiz">Question goes here</h2>
-        <div id="answer-buttons">
+    <div class="quiz-animal" id="animal-quiz">
+      <h1>Animals Quiz</h1>
+      <img src="./foto/animalcover.jpg" />
+      <button id="continue-study-btn">Continue Study</button>
+    </div>
+
+    <div class="app" id="app-quiz">
+      <h1>Animals <span>Quiz</span></h1>
+      <div class="quiz">
+        <h2 id="question">Quiz Goes Here</h2>
+        <div class="animalimg">
+          <img id="questionImage" src="" />
+        </div>
+        <div id="answer-button">
           <button class="btn">Answer 1</button>
           <button class="btn">Answer 2</button>
           <button class="btn">Answer 3</button>
           <button class="btn">Answer 4</button>
-          <button class="btn">Answer 5</button>
         </div>
         <button id="next-btn">Next</button>
       </div>
